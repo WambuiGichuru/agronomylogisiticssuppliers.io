@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+/* Global Styles */
+body {
+    background-color: #33483c;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Bodoni Moda', sans-serif;
+    color: #EDEEE9;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    color: #EDEEE9;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+p {
+    font-family: 'Syne', sans-serif;
+    color: #EDEEE9;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Common Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Syne', sans-serif;
+    background-color: #33483c;
+    color: #33483c;
+}
+
+h1 {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Topstrip Division Styles (Keeping this section intact as requested) */
+.topstrip {
+    height: 50px;
+    background-color: #33483c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.topstrip img {
+    height: 50px;
+}
+
+.topstrip .navigation {
+    margin-left: auto;
+}
+
+.topstrip .navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topstrip .navigation li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.topstrip .navigation li:first-child {
+    margin-left: 0;
+}
+
+.topstrip .navigation a {
+    color: #EDEEE9;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.topstrip .navigation a:hover {
+    text-decoration: underline;
+}
+
+.intro  {
+    height: 450px;
+    position: relative; /* Set position to enable overlaying elements */
+    color: #EDEEE9;
+    text-align: center; /* Center the text content */
+    overflow: hidden; /* Hide overflowing video content */
+}
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Ensure the text is above the video */
+    transition: all 0.3s ease; /* Add transition for the hover effect */
+}
+
+.text-container h1 {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 36px;
+    color: #EDEEE9;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-family: 'Syne', sans-serif;
+    color: #EDEEE9;
+    font-size: 18px;
+}
+
+/* Hover effect */
+.text-container:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    backdrop-filter: blur(20px); /* Add blur effect to the background video */
+}
+/* New CSS for the services page */
+.services {
+    background-color: #33483c;
+    padding: 40px 0;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services .service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services .service h2 {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    color: #EDEEE9;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.services .service p {
+    font-size: 18px;
+    font-family: 'Syne', sans-serif;
+    color: #EDEEE9;
+    line-height: 1.6;
+}
+
+.services .service ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .service li {
+    
+    width: 300px;
+    margin: 20px;
+    border-radius:10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services .service li img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services .service li h3 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #33483c;
+    font-weight: 600;
+    padding: 20px;
+    background-color: rgb(221, 212, 186);
+}
+
+.services .service li p {
+    font-size: 16px;
+    font-family: 'Syne', sans-serif;
+    color: #EDEEE9;
+    padding: 10px 20px;
+}
+
+.services .service li:hover img {
+    transform: scale(1.5);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+.footer {
+    height: 20px;
+    background-color: #5a7567;
+    padding: 20px 0;
+    text-align: center;
+    color: #f0ede9;
+}
+
+.footer p {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+.footer marquee {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+}

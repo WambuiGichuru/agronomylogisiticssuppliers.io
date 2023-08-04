@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body {
+    background-color: #33483c;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Bodoni Moda', sans-serif;
+    color: #EDEEE9;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    color: #EDEEE9;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+p {
+    font-family: 'Syne', sans-serif;
+    color: #EDEEE9;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* Topstrip Division Styles */
+.topstrip {
+    height: 50px;
+    background-color: #33483c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align logo to the left and navigation to the right */
+    padding: 0 20px; /* Add padding to create some space around the content */
+}
+
+.topstrip img {
+    height: 50px; /* Set the desired height for your logo */
+}
+
+/* Align the navigation to the right */
+.topstrip .navigation {
+    margin-left: auto; /* Push the navigation to the right */
+}
+
+.topstrip .navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topstrip .navigation li {
+    display: inline-block;
+    margin-left: 20px; /* Add spacing between navigation links */
+}
+
+.topstrip .navigation li:first-child {
+    margin-left: 0; /* Remove margin for the first link */
+}
+
+.topstrip .navigation a {
+    color: #EDEEE9;
+    text-decoration: none;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.topstrip .navigation a:hover {
+    text-decoration: underline; /* Add underline on hover (optional) */
+}
+
+
+/* Welcomesection Division Styles */
+.welcomesection {
+    height: 650px;
+    position: relative; /* Set position to enable overlaying elements */
+    color: #EDEEE9;
+    text-align: center; /* Center the text content */
+    overflow: hidden; /* Hide overflowing video content */
+}
+
+/* Video Styles */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place video behind other elements */
+}
+
+/* Overlaying Div for Background Image */
+.welcomesection .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('android-chrome-512x512.png'); /* Add a background image */
+    background-size: 350px; /* Correct the property name here */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0; /* Place the overlay behind the text content */
+}
+/* About Us Section Styles */
+.aboutpage {
+    height: 650px;
+    background-color: rgb(221, 212, 186);
+    text-align: center;
+    padding: 40px 0; /* Adjust the padding as needed for spacing */
+    color: #33483c;
+}
+.aboutpage h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #33483c;
+    font-weight: 200;
+    margin-bottom: 10px; /* Add some spacing between the elements */
+}
+.aboutpage h1 {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 60px;
+    font-weight: 550;
+    color: #33483c;
+}
+.aboutpage p {
+    font-family: 'Syne', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: #33483c;
+
+}
+/* Servicespage Division Styles */
+.servicespage {
+    padding: 40px;
+    background-color: #33483c;
+}
+
+.servicespage h1 {
+    font-family: 'Bodoni Moda', sans-serif;
+    color: #33483c;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.service-item {
+    background-color: rgb(221, 212, 186);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service-item h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #33483c;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-family: 'Syne', sans-serif;
+    color: #33483c;
+    font-size: 18px;
+}
+
+
+/* Contactus Division Styles */
+.contactus {
+    height: 300px;
+    padding: 40px;
+    background-color: #33483c;
+}
+
+.contactus p {
+    font-family: 'Syne', sans-serif;
+    color: #EDEEE9;
+    font-size: 18px;
+}
+/* Footer Styles */
+.footer {
+    height: 20px;
+    background-color: #5a7567;
+    padding: 20px 0;
+    text-align: center;
+    color: #f0ede9;
+}
+
+.footer p {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+.footer marquee {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* font-family: 'Bodoni Moda', serif;
+font-family: 'Herr Von Muellerhoff', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Syne', sans-serif; */
